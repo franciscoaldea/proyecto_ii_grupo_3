@@ -1,0 +1,389 @@
+body {
+  background-color: #001f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.resenas-falsas {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.resenas-falsas h2 {
+  margin-top: 0;
+  color: #ccc;
+}
+
+.resena {
+  border-left: 4px solid #888;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.resena strong {
+  color: #00bcd4;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.resena p {
+  margin: 0;
+  color: #ddd;
+}
+
+/* --- estilos globales para el cuerpo de la página --- */
+/* Esta sección define el estilo general del documento, incluyendo el fondo,
+        la fuente predeterminada y el color del texto. La imagen de fondo está
+        configurada para cubrir toda la ventana y ser fija al desplazarse,
+        dando un efecto de paralaje suave si el contenido es desplazable. */
+body {
+  background-image: url('img/bannerpro.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'tiny5', Arial, sans-serif;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- estilos para el encabezado (header) de la página --- */
+/* Esta sección estiliza la barra superior de la página,
+        proporcionando un fondo semitransparente, padding y alineación central para el texto.
+        La propiedad 'position: relative' es necesaria para posicionar elementos hijos de forma absoluta dentro de él (como el botón de cerrar sesión). */
+header {
+  background-image: none;
+  background: rgba(34, 34, 34, 0.7);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  height: auto;
+}
+
+/* --- estilos para el título principal dentro del header --- */
+/* Define la apariencia del título 'la tierra de las manzanas',
+        incluyendo color, una sombra de texto para mejorar la legibilidad y tamaño de fuente. */
+header h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  font-size: 2.5em;
+}
+
+/* --- estilos para los formularios de reseña y los ítems de reseña individuales --- */
+/* Esta sección aplica estilos generales a los contenedores de formularios y reseñas,
+        como un fondo semitransparente oscuro, bordes redondeados y un margen inferior para separarlos. */
+.review-form,
+.review-item {
+  background: rgba(42, 42, 42, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+/* --- estilos para el botón de cerrar sesión --- */
+/* Esta sección estiliza el botón de cierre de sesión,
+        definiendo su color de fondo. Las otras propiedades se definen en una clase posterior con posicionamiento absoluto. */
+.logout-button {
+  background-color: #dc3545;
+  /* ... otros estilos del botón ... */
+}
+
+/* --- estilos para el contenido principal (main) --- */
+/* Esta sección centra el contenido principal en la página,
+        establece un ancho máximo para una mejor legibilidad en pantallas grandes
+        y añade padding horizontal para que el contenido no toque los bordes en pantallas pequeñas. */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* --- estilos para la sección de descripción del juego --- */
+/* Esta sección aplica un fondo distintivo (verde), padding y bordes redondeados
+        a la caja de descripción del juego, haciéndola resaltar. */
+section.description {
+  background: rgb(27, 105, 16);
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* --- estilos para los títulos h2 dentro de la descripción --- */
+/* Ajusta el margen superior de los títulos dentro de la descripción para una mejor separación visual. */
+section.description h2 {
+  margin-top: 0;
+}
+
+/* --- estilos para el botón de descarga --- */
+/* Estiliza el botón de descarga, dándole un aspecto prominente con
+        color de fondo, texto blanco, padding generoso, tamaño de fuente más grande, bordes redondeados,
+        y un efecto de transición suave al pasar el ratón. Se centra en la página. */
+button.download-btn {
+  display: block;
+  background: rgb(15, 231, 33);
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+/* --- efecto hover para el botón de descarga --- */
+/* Define el cambio de estilo (fondo transparente) cuando el cursor se posa sobre el botón de descarga. */
+button.download-btn:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* --- estilos para la sección de reseñas --- */
+/* Esta sección define el aspecto general del contenedor de reseñas,
+        incluyendo un margen superior para separarlo, un fondo oscuro, padding interno y bordes redondeados. */
+section.reviews {
+  margin-top: 40px;
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* --- estilos para los títulos h2 dentro de las reseñas --- */
+/* Ajusta el margen inferior de los títulos dentro de la sección de reseñas para una mejor separación. */
+section.reviews h2 {
+  margin-bottom: 10px;
+}
+
+/* --- estilos para el formulario de reseña --- */
+/* Esta sección organiza los elementos del formulario de reseña
+        utilizando flexbox para una disposición vertical de los elementos. */
+form.review-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- estilos para el área de texto de la reseña --- */
+/* Estiliza el campo de entrada de texto para las reseñas,
+        permitiendo redimensionamiento vertical por el usuario, estableciendo una altura mínima,
+        añadiendo padding, tamaño de fuente, bordes redondeados y un margen inferior. */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* --- estilos para el botón de enviar reseña --- */
+/* Define el estilo del botón para enviar reseñas,
+        incluyendo color de fondo (verde), texto blanco, sin borde, padding,
+        tamaño de fuente, bordes redondeados, cursor de puntero y una transición suave.
+        Se alinea a la izquierda dentro del flexbox. */
+button.submit-review {
+  align-self: flex-start;
+  background: rgb(25, 255, 79);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* --- efecto hover para el botón de enviar reseña --- */
+/* Define el cambio de color (a un verde más oscuro) cuando el cursor se posa sobre el botón de enviar reseña. */
+button.submit-review:hover {
+  background: #1e7e34;
+}
+
+/* --- estilos para el botón de cerrar sesión (posicionamiento absoluto) --- */
+/* Esta sección posiciona el botón de cerrar sesión de forma absoluta en la esquina
+        superior izquierda del encabezado, asegurando que siempre sea visible y no afecte el flujo del documento.
+        Tiene un z-index alto para que aparezca por encima de otros elementos si hay superposición. */
+.logout-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: block;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 10;
+}
+
+/* --- efecto hover para el botón de cerrar sesión --- */
+/* Define el cambio de color (a un rojo más oscuro) cuando el cursor se posa sobre el botón de cerrar sesión. */
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+/* --- clase para la fuente 'tiny5' --- */
+/* Define la aplicación de la fuente "tiny5" para elementos que tengan esta clase,
+        asegurando un peso de fuente normal y estilo normal. */
+.tiny5-regular {
+  font-family: "tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --- estilos para cada ítem de reseña individual --- */
+/* Esta sección estiliza cada reseña individualmente,
+        proporcionando un fondo oscuro, padding, bordes redondeados y un margen inferior para separarlas. */
+.review-item {
+  background: #2a2a2a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* --- estilos para los metadatos de la reseña (autor, fecha) --- */
+/* Estiliza la información del autor y la fecha de la reseña,
+        incluyendo un tamaño de fuente ligeramente más pequeño y un color de texto más claro. */
+.review-meta {
+  font-size: 0.9em;
+  color: #bbb;
+  margin-bottom: 10px;
+}
+
+/* --- estilos para el contenido de texto de la reseña --- */
+/* Define el estilo del texto principal de la reseña,
+        incluyendo el margen inferior y la altura de línea para mejorar la legibilidad. */
+.review-content {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* --- estilos para la sección de reacciones (emojis) --- */
+/* Organiza los botones de reacción de emojis utilizando flexbox
+        para una alineación horizontal, alineación vertical de ítems y espaciado entre ellos. */
+.reaction-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* --- estilos para los botones de reacción de emoji --- */
+/* Estiliza los botones de reacción de emojis, incluyendo
+        fondo transparente, borde sutil, bordes redondeados, padding, tamaño de fuente,
+        cursor de puntero y transiciones suaves para efectos visuales.
+        Utiliza flexbox para alinear el emoji y el conteo. */
+.reaction-button {
+  background: none;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* --- efecto hover para los botones de reacción --- */
+/* Define los cambios de estilo (fondo y color de borde más oscuro) cuando el cursor se posa sobre los botones de reacción. */
+.reaction-button:hover {
+  background-color: #3a3a3a;
+  border-color: #666;
+}
+
+/* --- estilos para el botón de reacción activo (seleccionado por el usuario) --- */
+/* Esta clase aplica un estilo visual distintivo (fondo azul, borde azul y texto blanco)
+        a un botón de reacción cuando el usuario ya ha seleccionado ese emoji para una reseña,
+        indicando su estado actual. */
+.reaction-button.active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+/* --- estilos para el contador de reacciones (número junto al emoji) --- */
+/* Estiliza el número que muestra la cantidad de veces que se ha usado un emoji para una reseña. */
+.reaction-count {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+/* --- estilos para el conteo total de reacciones de una reseña --- */
+/* Posiciona el conteo total de reacciones a la derecha de la sección de reacciones
+        utilizando 'margin-left: auto' dentro de un flexbox. */
+.total-reactions {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+/* --- estilos para el contenedor del video (iframe responsivo) --- */
+/* Esta sección asegura que el video incrustado sea responsivo y
+        mantenga una relación de aspecto consistente (16:9, dado por padding-bottom: 56.25%)
+        en diferentes tamaños de pantalla. Oculta el desbordamiento y añade un fondo negro. */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 20px 0;
+  background: #000;
+  border-radius: 8px;
+}
+
+/* --- estilos para el iframe dentro del contenedor de video (para hacerlo responsivo) --- */
+/* Asegura que el iframe del video ocupe todo el espacio de su contenedor responsivo,
+        cubriendo la posición absoluta y eliminando cualquier borde predeterminado. */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- estilos para el botón de eliminar reseña --- */
+/* Define el estilo visual del botón de eliminar reseña,
+        usando un color rojo para indicar una acción de borrado, texto blanco,
+        bordes redondeados, padding y un tamaño de fuente pequeño para que sea discreto. */
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* --- efecto hover para el botón de eliminar reseña --- */
+/* Cambia el color del botón de eliminar reseña a un rojo más oscuro al pasar el ratón. */
+.delete-button:hover {
+  background-color: #c82333;
+}
