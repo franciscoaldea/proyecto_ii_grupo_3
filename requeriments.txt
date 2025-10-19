@@ -1,2 +1,0 @@
-Para correr el proyecto "paginawebjuego" en un localhost se siguieron los pasos de este video: 
-https://www.youtube.com/watch?v=Mct8Xw_BK8s
