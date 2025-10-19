@@ -182,7 +182,7 @@ $query_reseñas = "SELECT r.id_resena, u.nombre_usuario, r.texto_resenas, r.fech
                   FROM resenas r JOIN usuario u ON r.id_usuario = u.id_usuario
                   ORDER BY r.fecha_creacion DESC";
 # Ejecuta la consulta de las reseñas.
-$result_reseñas = $mysqli->query($query_reseñas);
+$result_reseñas = $mysqli->query(query: $query_reseñas);
 
 # Verifica si la consulta de reseñas fue exitosa.
 if ($result_reseñas) {
