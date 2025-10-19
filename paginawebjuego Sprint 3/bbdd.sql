@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS resenas (
     FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario) ON DELETE CASCADE
 );
 CREATE TABLE reacciones_resena (
-    id_reaccion INT PRIMARY PRIMARY KEY AUTO_INCREMENT,
+    id_reaccion INT PRIMARY KEY AUTO_INCREMENT,
     id_usuario INT NOT NULL,
     id_resena INT NOT NULL,
     emoji VARCHAR(10) NOT NULL,
